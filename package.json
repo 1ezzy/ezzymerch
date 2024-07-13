@@ -10,8 +10,8 @@
     "typescript"
   ],
   "scripts": {
-    "dev:backend": "pnpm ./apps/backend dev",
-    "dev:storefront": "pnpm ./apps/storefront dev",
+    "dev:backend": "pnpm --filter ezzymerch-backend dev",
+    "dev:storefront": "pnpm --filter ezzymerch-storefront dev",
     "dev": "pnpm -r run dev"
   },
   "packageManager": "pnpm@9.5.0",
