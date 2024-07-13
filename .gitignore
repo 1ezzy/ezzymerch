@@ -20,12 +20,12 @@ apps/*/.env.template
 apps/backend/build/
 
 # SvelteKit build output
-apps/frontend/.svelte-kit/
-apps/frontend/build/
-apps/frontend/package/
+apps/storefront/.svelte-kit/
+apps/storefront/build/
+apps/storefront/package/
 
 # static and public files (if any)
-apps/frontend/public/build/
+apps/storefront/public/build/
 
 # IDEs and editors
 .vscode/
