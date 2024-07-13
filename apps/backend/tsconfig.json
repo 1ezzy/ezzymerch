@@ -14,7 +14,6 @@
     "outDir": "./dist",
     "rootDir": "./",
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "checkJs": false
@@ -22,11 +21,5 @@
   "ts-node": {
     "swc": true
   },
-  "exclude": [
-    "**/__tests__",
-    "**/__fixtures__",
-    "node_modules",
-    "build",
-    ".cache"
-  ]
+  "exclude": ["node_modules", "build", ".cache"]
 }

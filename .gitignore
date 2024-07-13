@@ -1,27 +1,39 @@
-/dist
+# Node modules
+node_modules/
+apps/*/node_modules/
+
+# logs
+logs/
+*.log
+pnpm-debug.log*
+
+# pnpm state files
+.pnpm-store/
+
+# dotenv environment variables file
 .env
 .env.template
+apps/*/.env
+apps/*/.env.template
+
+# MedusaJS build output
+apps/backend/build/
+
+# SvelteKit build output
+apps/frontend/.svelte-kit/
+apps/frontend/build/
+apps/frontend/package/
+
+# static and public files (if any)
+apps/frontend/public/build/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# system files
 .DS_Store
-/uploads
-/node_modules
-yarn-error.log
 
-.idea
-
-coverage
-
-!src/**
-
-./tsconfig.tsbuildinfo
-package-lock.json
-yarn.lock
-medusa-db.sql
-build
-.cache
-
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# nx stuff
+.nx/cache
+.nx/workspace-data

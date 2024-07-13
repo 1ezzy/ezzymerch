@@ -1,0 +1,13 @@
+# src files
+!src/**
+
+# MedusaJS stuff
+/dist
+/uploads
+.cache
+
+# typescript stuff
+./tsconfig.tsbuildinfo
+
+# system files
+.DS_Store
