@@ -1,3 +1,3 @@
 ## project ezzymerch
 
-you know the drill
+medusajs + sveltekit ecommerce monorepo powered by nx and pnpm 
