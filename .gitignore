@@ -33,7 +33,3 @@ apps/storefront/public/build/
 
 # system files
 .DS_Store
-
-# nx stuff
-.nx/cache
-.nx/workspace-data

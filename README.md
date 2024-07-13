@@ -1,3 +1,3 @@
 ## project ezzymerch
 
-medusajs + sveltekit ecommerce monorepo powered by nx and pnpm 
+medusajs + sveltekit ecommerce monorepo powered by pnpm 
