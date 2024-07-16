@@ -1,5 +1,6 @@
 /* Write your global styles here, in PostCSS syntax */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +11,8 @@
 }
 
 body {
-	font-family: 'Noto Sans', sans-serif;
+	@apply bg-surface-100;
+	@apply font-noto;
 }
 
 img,
