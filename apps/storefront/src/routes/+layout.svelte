@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { AppBar, Button, Drawer, Tooltip, settings } from 'svelte-ux';
+	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import '../app.postcss';
 
 	settings({
@@ -40,7 +41,7 @@
 
 <AppBar class="px-8 sticky top-0" title="Svelte UX Starter" menuIcon={null}>
 	<div slot="title">
-		<a href="/"><h1 class="font-indie">project ezzymerch</h1></a>
+		<a href="/"><h1 class="font-indie">ezzymerch</h1></a>
 	</div>
 	<div slot="actions" class="flex items-center">
 		<Tooltip title="Total" placement="bottom">
@@ -59,6 +60,8 @@
 <main class="p-2 w-full min-h-[calc(100vh-128px)] flex">
 	<slot />
 </main>
+
+<ScrollToTop />
 
 <footer class="p-4 flex flex-row items-center justify-center gap-16 h-[64px]">
 	<span class="text-opacity-50 text-white text-sm">
