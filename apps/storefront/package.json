@@ -26,9 +26,10 @@
 	"devDependencies": {
 		"@mdi/js": "^7.4.47",
 		"@medusajs/client-types": "preview",
-    	"@medusajs/ui-preset": "preview",
+		"@medusajs/ui-preset": "preview",
 		"@playwright/test": "^1.44.1",
 		"@sveltejs/adapter-auto": "^3.2.1",
+		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/kit": "^2.5.10",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@typescript-eslint/eslint-plugin": "^7.11.0",
@@ -52,8 +53,8 @@
 	},
 	"dependencies": {
 		"@medusajs/js-sdk": "preview",
-    	"@medusajs/types": "preview",
-   	 	"@medusajs/ui": "preview",
+		"@medusajs/types": "preview",
+		"@medusajs/ui": "preview",
 		"dotenv": "^16.4.5"
 	}
 }
