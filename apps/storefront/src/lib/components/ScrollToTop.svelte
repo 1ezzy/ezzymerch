@@ -5,6 +5,8 @@
 	export let showOnPx: number = 256;
 	let hidden: boolean = true;
 
+	let innerWidth: number;
+
 	function goTop() {
 		window.scrollTo({
 			top: 0,
@@ -29,10 +31,14 @@
 	}
 </script>
 
-<svelte:window on:scroll={handleOnScroll} />
+<svelte:window on:scroll={handleOnScroll} bind:innerWidth />
 
 {#if !hidden}
-	<span transition:fade={{ duration: 200 }} class="sticky bottom-8 left-8 select-none">
+	<span
+		transition:fade={{ duration: 200 }}
+		class="sticky bottom-8 left-8 select-none"
+		class:hidden={innerWidth < 768}
+	>
 		<Tooltip title="Scroll to Top" placement="top" offset={4}>
 			<Button icon="https://api.iconify.design/mdi:arrow-up-bold-circle.svg" on:click={goTop} />
 		</Tooltip>
