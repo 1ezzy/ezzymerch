@@ -3,7 +3,7 @@
 	import { Button, Tooltip } from 'svelte-ux';
 
 	export let showOnPx: number = 256;
-	let hidden: boolean = false;
+	let hidden: boolean = true;
 
 	function goTop() {
 		window.scrollTo({

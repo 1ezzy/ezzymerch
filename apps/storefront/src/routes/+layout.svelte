@@ -30,18 +30,21 @@
 		<div>There is shit in your cart!</div>
 	{:else}
 		<div class="flex-1 flex flex-col items-center justify-center">
-			<span>Your cart is empty</span>
+			<span class="text-gray-300">Your cart is empty</span>
 		</div>
 	{/if}
 
 	<div slot="actions">
-		<Button on:click={() => (drawerExpanded = false)}>Close</Button>
+		<Button href="/cart" on:click={() => (drawerExpanded = false)}>Go to Cart</Button>
 	</div>
 </Drawer>
 
 <AppBar class="px-8 sticky top-0" title="Svelte UX Starter" menuIcon={null}>
-	<div slot="title">
+	<div slot="title" class="mr-12">
 		<a href="/"><h1 class="font-indie">ezzymerch</h1></a>
+	</div>
+	<div class="mx-auto w-full flex justify-center gap-8">
+		<a href="/products"><span class="">Products</span></a>
 	</div>
 	<div slot="actions" class="flex items-center">
 		<Tooltip title="Total" placement="bottom">
@@ -57,16 +60,16 @@
 	</div>
 </AppBar>
 
-<main class="p-2 w-full min-h-[calc(100vh-128px)] flex">
+<main class="p-2 w-full min-h-[calc(100vh-128px)] flex justify-center">
 	<slot />
 </main>
 
 <ScrollToTop />
 
-<footer class="p-4 flex flex-row items-center justify-center gap-16 h-[64px]">
+<footer class="p-4 flex flex-row items-center justify-center gap-32 h-[64px]">
 	<span class="text-opacity-50 text-white text-sm">
 		© 2024&nbsp;&nbsp;-&nbsp;&nbsp;powered by
-		<a class="font-indie" href="https://ezzy.dog"> 1ezzy! </a></span
+		<a class="font-indie" href="https://ezzy.dog" target="_blank"> 1ezzy! </a></span
 	>
 	<div class="flex gap-3">
 		<Tooltip title="Open Twitter / X" placement="top" offset={2}>
