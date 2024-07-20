@@ -12,7 +12,8 @@
   "scripts": {
     "dev:backend": "pnpm --filter ezzymerch-backend dev",
     "dev:storefront": "pnpm --filter ezzymerch-storefront dev",
-    "dev": "pnpm -r run dev"
+    "dev": "pnpm -r run dev",
+    "build:storefront": "pnpm --filter ezzymerch-storefront build"
   },
   "packageManager": "pnpm@9.5.0",
   "engines": {

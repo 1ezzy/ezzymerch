@@ -32,8 +32,7 @@ jobs:
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
         run: |
-          cd apps/storefront
-          pnpm run build
+          pnpm run build:storefront
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
@@ -56,3 +55,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          folder: "dist"
