@@ -25,6 +25,8 @@
 	},
 	"devDependencies": {
 		"@mdi/js": "^7.4.47",
+		"@medusajs/client-types": "preview",
+    	"@medusajs/ui-preset": "preview",
 		"@playwright/test": "^1.44.1",
 		"@sveltejs/adapter-auto": "^3.2.1",
 		"@sveltejs/kit": "^2.5.10",
@@ -49,6 +51,9 @@
 		"vitest": "^1.6.0"
 	},
 	"dependencies": {
+		"@medusajs/js-sdk": "preview",
+    	"@medusajs/types": "preview",
+   	 	"@medusajs/ui": "preview",
 		"dotenv": "^16.4.5"
 	}
 }
