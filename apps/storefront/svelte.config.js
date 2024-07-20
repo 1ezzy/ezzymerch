@@ -16,7 +16,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: '/ezzymerch'
+			base: '/ezzymerch/apps/storefront'
 		}
 	}
 };
