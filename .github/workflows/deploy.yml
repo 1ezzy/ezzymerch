@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: "main"
-    # paths: apps/storefront
+    # Uncomment this line if you only want to trigger the workflow for changes in the storefront
+    # paths: apps/storefront/**
 
 jobs:
   build_site:
@@ -37,7 +38,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # this should match the `pages` option in your adapter-static options
           path: "apps/storefront/build"
 
   deploy:
