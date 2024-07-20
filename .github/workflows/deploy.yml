@@ -38,7 +38,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "apps/storefront/build"
+          path: "/apps/storefront/build"
 
   deploy:
     needs: build_site
