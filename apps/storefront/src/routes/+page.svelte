@@ -124,6 +124,8 @@
 	@media (min-width: 768px) {
 		div.featured-item {
 			@apply flex-row;
+			@apply gap-16;
+			@apply bg-transparent;
 		}
 
 		div.image-panel {
@@ -143,9 +145,11 @@
 		@apply w-full;
 		@apply flex;
 		@apply flex-col;
-		@apply gap-16;
+		@apply gap-0;
 		@apply items-stretch;
 		@apply justify-center;
+		@apply bg-surface-200;
+		@apply rounded-lg;
 	}
 
 	.image-panel {
