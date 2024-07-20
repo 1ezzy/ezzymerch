@@ -16,7 +16,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: '/apps/storefront'
+			base: '/build/apps/storefront'
 		}
 	}
 };
