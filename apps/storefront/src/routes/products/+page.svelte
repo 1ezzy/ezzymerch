@@ -28,8 +28,8 @@
 				</Tilt>
 				<h1 class="item-header">ezzymerch x getfent<br />Signature T-Shirt</h1>
 				<div class="item-buttons">
-					<Button class="bg-gray-800 text-white">More Info</Button>
-					<Button class="bg-gray-800 text-white">Add to Cart</Button>
+					<Button class="bg-gray-700 text-white">More Info</Button>
+					<Button class="bg-gray-700 text-white">Add to Cart</Button>
 				</div>
 			</div>
 			<div class="item-card bg-secondary-500">
@@ -42,8 +42,8 @@
 				</Tilt>
 				<h1 class="item-header">ezzymerch x getfent<br />Alt T-Shirt</h1>
 				<div class="item-buttons">
-					<Button class="bg-gray-800 text-white">More Info</Button>
-					<Button class="bg-gray-800 text-white">Add to Cart</Button>
+					<Button class="bg-gray-700 text-white">More Info</Button>
+					<Button class="bg-gray-700 text-white">Add to Cart</Button>
 				</div>
 			</div>
 			<div class="item-card bg-success-500">
@@ -56,8 +56,8 @@
 				</Tilt>
 				<h1 class="item-header">ezzymerch x jaimewallowa<br />Signature Hat</h1>
 				<div class="item-buttons">
-					<Button class="bg-gray-800 text-white">More Info</Button>
-					<Button class="bg-gray-800 text-white">Add to Cart</Button>
+					<Button class="bg-gray-700 text-white">More Info</Button>
+					<Button class="bg-gray-700 text-white">Add to Cart</Button>
 				</div>
 			</div>
 		</div>
