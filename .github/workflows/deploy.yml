@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: "main"
+    paths: /apps/storefront
 
 jobs:
   build_site:
@@ -30,6 +31,7 @@ jobs:
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
         run: |
+          cd apps/storefront
           pnpm run build
 
       - name: Upload Artifacts
