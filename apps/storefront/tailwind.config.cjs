@@ -14,13 +14,13 @@ const config = {
 		themes: {
 			light: {
 				'color-scheme': 'light',
-				primary: 'hsl(264.4019 81.9608% 50%)',
-				secondary: 'hsl(310.4453 100% 50%)',
-				accent: 'hsl(173.4835 100% 42.1865%)',
-				neutral: 'hsl(214.2857 19.6262% 20.9804%)',
-				'surface-100': 'hsl(180 100% 100%)',
-				'surface-200': 'hsl(0 0% 94.902%)',
-				'surface-300': 'hsl(180 1.9608% 90%)'
+				primary: 'hsl(183.0303 47.3684% 59.0196%)',
+				secondary: 'hsl(338.25 71.4286% 78.0392%)',
+				accent: 'hsl(39 84.1121% 58.0392%)',
+				neutral: 'hsl(280 46.4789% 13.9216%)',
+				'surface-100': 'hsl(24 33.3333% 97.0588%)',
+				'surface-200': 'hsl(26.6667 21.9512% 91.9608%)',
+				'surface-300': 'hsl(22.5 14.2857% 89.0196%)'
 			},
 			dark: {
 				'color-scheme': 'dark',

@@ -22,6 +22,7 @@ apps/backend/build/
 # SvelteKit build output
 apps/storefront/.svelte-kit/
 apps/storefront/build/
+apps/storefront/ezzymerch/
 apps/storefront/package/
 
 # static and public files (if any)
