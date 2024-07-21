@@ -14,7 +14,7 @@ const config = {
 		themes: {
 			light: {
 				'color-scheme': 'light',
-				primary: 'hsl(257.4075 100% 50%)',
+				primary: 'hsl(264.4019 81.9608% 50%)',
 				secondary: 'hsl(310.4453 100% 50%)',
 				accent: 'hsl(173.4835 100% 42.1865%)',
 				neutral: 'hsl(214.2857 19.6262% 20.9804%)',
