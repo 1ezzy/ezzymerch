@@ -9,8 +9,8 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: 'ezzymerch',
+			assets: 'ezzymerch',
 			fallback: null,
 			precompress: false,
 			strict: true,
