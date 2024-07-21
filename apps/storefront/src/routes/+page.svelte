@@ -67,7 +67,7 @@
 					</Tilt>
 				</div>
 				<div class="item-panel">
-					<h1 class="text-primary-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-primary-500 item-heading">
 						ezzymerch x getfent<br />Signature T-Shirt
 					</h1>
 					<div class="panel-button-group">
@@ -78,7 +78,7 @@
 			</div>
 			<div class="featured-item h-full md:h-fit md:!flex-row !flex-col-reverse">
 				<div class="item-panel">
-					<h1 class="text-secondary-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-secondary-500 item-heading">
 						ezzymerch x getfent<br />Alt T-Shirt
 					</h1>
 					<div class="panel-button-group">
@@ -107,7 +107,7 @@
 					</Tilt>
 				</div>
 				<div class="item-panel">
-					<h1 class="text-accent-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-accent-500 item-heading">
 						ezzymerch x jaimewallowa<br />Signature Hat
 					</h1>
 					<div class="panel-button-group">
@@ -178,6 +178,13 @@
 		@apply flex;
 		@apply flex-col;
 		@apply items-center;
+	}
+
+	.item-heading {
+		@apply text-3xl;
+		@apply text-center;
+		@apply p-4;
+		@apply leading-relaxed;
 	}
 
 	.panel-button-group {
