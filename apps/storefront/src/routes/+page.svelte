@@ -26,7 +26,7 @@
 		<span>Image and logo</span>
 	</div>
 	<div class="w-full flex flex-col">
-		<h2 class="text-xl text-gray-300 mb-2">now presenting...</h2>
+		<h2 class="text-xl dark:text-gray-300 text-gray-500 mb-2">now presenting...</h2>
 		<div class="flex md:flex-row flex-col md:gap-0 gap-2 items-center justify-between mb-8">
 			<h1 class="text-3xl mb-2">ezzymerch drop 1 (summer '24)</h1>
 			<h2 class="text-xl text-primary-500">art from cincinnati local artists</h2>

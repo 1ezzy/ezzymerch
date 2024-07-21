@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, Button, Drawer, Tooltip, settings } from 'svelte-ux';
+	import { AppBar, Button, Drawer, ThemeSwitch, Tooltip, settings } from 'svelte-ux';
 	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import '../app.postcss';
 
@@ -13,7 +13,11 @@
 
 	let drawerExpanded: boolean = false;
 	let cartItems = [];
+
+	let innerWidth: number;
 </script>
+
+<svelte:window bind:innerWidth />
 
 <Drawer bind:open={drawerExpanded} placement="right" class="w-[320px] flex flex-col">
 	<div class="p-4 flex flex-row items-center justify-center">
@@ -47,6 +51,9 @@
 		<a href="/products"><span class="">Products</span></a>
 	</div>
 	<div slot="actions" class="flex items-center basis-1/3">
+		{#if innerWidth > 768}
+			<ThemeSwitch class="mr-8 dark:bg-surface-100" />
+		{/if}
 		<Tooltip title="Total" placement="bottom">
 			<span class="inline-block mr-1">$0</span>
 		</Tooltip>
@@ -66,8 +73,10 @@
 
 <ScrollToTop />
 
-<footer class="p-4 flex flex-row items-center justify-center md:gap-32 gap-8 h-[64px]">
-	<span class="text-opacity-50 text-white text-sm">
+<footer
+	class="p-4 flex flex-row items-center justify-center md:gap-32 gap-8 h-[64px] dark:text-gray-300 text-gray-500"
+>
+	<span class="text-opacity-50 text-sm">
 		© 2024&nbsp;&nbsp;-&nbsp;&nbsp;powered by
 		<a class="font-indie" href="https://ezzy.dog" target="_blank"> 1ezzy! </a></span
 	>
