@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, Button, Drawer, ThemeSwitch, Tooltip, settings } from 'svelte-ux';
+	import { AppBar, Button, Drawer, ThemeInit, ThemeSwitch, Tooltip, settings } from 'svelte-ux';
 	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import '../app.postcss';
 
@@ -18,6 +18,8 @@
 </script>
 
 <svelte:window bind:innerWidth />
+
+<ThemeInit />
 
 <Drawer bind:open={drawerExpanded} placement="right" class="w-[320px] flex flex-col">
 	<div class="p-4 flex flex-row items-center justify-center">
@@ -52,7 +54,7 @@
 	</div>
 	<div slot="actions" class="flex items-center basis-1/3">
 		{#if innerWidth > 768}
-			<ThemeSwitch class="mr-8 dark:bg-surface-100" />
+			<ThemeSwitch class="mr-8 dark:bg-surface-100 bg-surface-100" />
 		{/if}
 		<Tooltip title="Total" placement="bottom">
 			<span class="inline-block mr-1">$0</span>
