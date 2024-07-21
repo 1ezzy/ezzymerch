@@ -40,13 +40,13 @@
 </Drawer>
 
 <AppBar class="md:px-8 px-4 sticky top-0" title="Svelte UX Starter" menuIcon={null}>
-	<div slot="title">
+	<div slot="title" class="basis-1/3">
 		<a href="/"><h1 class="font-indie pl-2">ezzymerch</h1></a>
 	</div>
-	<div class="mx-auto w-full flex justify-center gap-8">
+	<div class="mx-auto w-full flex justify-center gap-8 basis-1/3">
 		<a href="/products"><span class="">Products</span></a>
 	</div>
-	<div slot="actions" class="flex items-center">
+	<div slot="actions" class="flex items-center basis-1/3">
 		<Tooltip title="Total" placement="bottom">
 			<span class="inline-block mr-1">$0</span>
 		</Tooltip>

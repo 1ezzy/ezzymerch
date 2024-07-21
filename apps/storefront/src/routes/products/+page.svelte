@@ -18,7 +18,7 @@
 	<div class="p-4 mt-10 w-full flex-1 flex flex-col">
 		<h1 class="flex items-center py-8 text-2xl">Products ({productCount} items)</h1>
 		<div class="p-4 flex-1 flex md:flex-row flex-col gap-16 justify-center">
-			<div class="item-card bg-accent-500">
+			<div class="item-card bg-primary-500">
 				<Tilt class="hover:scale-110 transition duration-500 basis-1/3">
 					<img
 						class="item-image transition ease-out"
@@ -46,7 +46,7 @@
 					<Button class="bg-gray-700 text-white">Add to Cart</Button>
 				</div>
 			</div>
-			<div class="item-card bg-success-500">
+			<div class="item-card bg-accent-500">
 				<Tilt class="hover:scale-110 transition duration-500 basis-1/3">
 					<img
 						class="item-image transition ease-out"

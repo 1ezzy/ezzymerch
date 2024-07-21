@@ -67,23 +67,23 @@
 					</Tilt>
 				</div>
 				<div class="item-panel">
-					<h1 class="text-secondary-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-primary-500 text-3xl text-center p-4 leading-relaxed">
 						ezzymerch x getfent<br />Signature T-Shirt
 					</h1>
 					<div class="panel-button-group">
-						<Button variant="fill" color="secondary" size="lg" class="w-full">More Info</Button>
-						<Button variant="fill" color="secondary" size="lg" class="w-full">Add to Cart</Button>
+						<Button variant="fill" color="primary" size="lg" class="w-full">More Info</Button>
+						<Button variant="fill" color="primary" size="lg" class="w-full">Add to Cart</Button>
 					</div>
 				</div>
 			</div>
 			<div class="featured-item h-full md:h-fit md:!flex-row !flex-col-reverse">
 				<div class="item-panel">
-					<h1 class="text-accent-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-secondary-500 text-3xl text-center p-4 leading-relaxed">
 						ezzymerch x getfent<br />Alt T-Shirt
 					</h1>
 					<div class="panel-button-group">
-						<Button variant="fill" color="accent" size="lg" class="w-full">More Info</Button>
-						<Button variant="fill" color="accent" size="lg" class="w-full">Add to Cart</Button>
+						<Button variant="fill" color="secondary" size="lg" class="w-full">More Info</Button>
+						<Button variant="fill" color="secondary" size="lg" class="w-full">Add to Cart</Button>
 					</div>
 				</div>
 				<div class="image-panel">
@@ -107,12 +107,12 @@
 					</Tilt>
 				</div>
 				<div class="item-panel">
-					<h1 class="text-success-500 text-3xl text-center p-4 leading-relaxed">
+					<h1 class="text-accent-500 text-3xl text-center p-4 leading-relaxed">
 						ezzymerch x jaimewallowa<br />Signature Hat
 					</h1>
 					<div class="panel-button-group">
-						<Button variant="fill" color="success" size="lg" class="w-full">More Info</Button>
-						<Button variant="fill" color="success" size="lg" class="w-full">Add to Cart</Button>
+						<Button variant="fill" color="accent" size="lg" class="w-full">More Info</Button>
+						<Button variant="fill" color="accent" size="lg" class="w-full">Add to Cart</Button>
 					</div>
 				</div>
 			</div>
