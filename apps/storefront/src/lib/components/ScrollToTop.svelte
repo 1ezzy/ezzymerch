@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import { Button, Tooltip } from 'svelte-ux';
+	import { Button, Tooltip, matchMediaWidth } from 'svelte-ux';
 
 	export let showOnPx: number = 256;
 	let hidden: boolean = true;
 
-	let innerWidth: number;
+	const isLargeScreen = matchMediaWidth(768);
 
 	function goTop() {
 		window.scrollTo({
@@ -31,14 +31,10 @@
 	}
 </script>
 
-<svelte:window on:scroll={handleOnScroll} bind:innerWidth />
+<svelte:window on:scroll={handleOnScroll} />
 
-{#if !hidden}
-	<span
-		transition:fade={{ duration: 200 }}
-		class="sticky bottom-8 left-8 select-none"
-		class:hidden={innerWidth < 768}
-	>
+{#if !hidden && $isLargeScreen}
+	<span transition:fade={{ duration: 200 }} class="sticky bottom-8 left-8 select-none">
 		<Tooltip title="Scroll to Top" placement="top" offset={4}>
 			<Button icon="https://api.iconify.design/mdi:arrow-up-bold-circle.svg" on:click={goTop} />
 		</Tooltip>

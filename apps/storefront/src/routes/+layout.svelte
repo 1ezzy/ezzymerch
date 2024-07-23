@@ -1,5 +1,14 @@
 <script lang="ts">
-	import { AppBar, Button, Drawer, ThemeInit, ThemeSwitch, Tooltip, settings } from 'svelte-ux';
+	import {
+		AppBar,
+		Button,
+		Drawer,
+		ThemeInit,
+		ThemeSwitch,
+		Tooltip,
+		settings,
+		matchMediaWidth
+	} from 'svelte-ux';
 	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import '../app.postcss';
 
@@ -11,15 +20,15 @@
 		}
 	});
 
+	const isLargeScreen = matchMediaWidth(768);
+
 	let drawerExpanded: boolean = false;
 	let cartItems = [];
-
-	let innerWidth: number;
 </script>
 
-<svelte:window bind:innerWidth />
-
-<ThemeInit />
+{#if $isLargeScreen}
+	<ThemeInit />
+{/if}
 
 <Drawer bind:open={drawerExpanded} placement="right" class="w-[320px] flex flex-col">
 	<div class="p-4 flex flex-row items-center justify-center">
