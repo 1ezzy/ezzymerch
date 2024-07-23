@@ -26,9 +26,7 @@
 	let cartItems = [];
 </script>
 
-{#if $isLargeScreen}
-	<ThemeInit />
-{/if}
+<ThemeInit />
 
 <Drawer bind:open={drawerExpanded} placement="right" class="w-[320px] flex flex-col">
 	<div class="p-4 flex flex-row items-center justify-center">
@@ -62,7 +60,7 @@
 		<a href="/products"><span class="">Products</span></a>
 	</div>
 	<div slot="actions" class="flex items-center basis-1/3">
-		{#if innerWidth > 768}
+		{#if $isLargeScreen}
 			<ThemeSwitch class="mr-8 dark:bg-surface-100 bg-surface-100" />
 		{/if}
 		<Tooltip title="Total" placement="bottom">
