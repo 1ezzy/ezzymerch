@@ -7,8 +7,8 @@
 </svelte:head>
 
 <section class="container flex-1 flex flex-col items-center gap-8">
-	<div class="p-4 flex-1 w-full grid grid-cols-10 mt-8">
-		<div class="flex flex-col" class:col-span-6={cartData} class:col-span-10={!cartData}>
+	<div class="p-4 flex-1 w-full flex md:flex-row flex-col mt-8 gap-8">
+		<div class="flex flex-col w-full flex-grow">
 			<div class="py-8 flex flex-row justify-between">
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -41,10 +41,10 @@
 		</div>
 		{#if cartData}
 			<div
-				class="col-span-1 mt-[92px] self-center justify-self-center h-[50%] w-[1px] border-2 border-double border-primary-500"
+				class="md:mt-[92px] self-center justify-self-center md:h-[50%] md:w-[1px] h-[1px] w-[75%] border-2 border-double border-primary-500"
 			/>
-			<div class="col-span-3 flex flex-col">
-				<div class="py-8 flex flex-row justify-between">
+			<div class="flex flex-col flex-shrink-0 flex-grow md:w-96 w-full">
+				<div class="md:py-8 pb-8 flex flex-row justify-between">
 					<h2 class="text-xl">Order Summary</h2>
 				</div>
 				<div
