@@ -15,7 +15,8 @@
   "scripts": {
     "dev:backend": "npm run dev -w ./apps/backend",
     "dev:storefront": "npm run dev -w ./apps/storefront",
-    "build:storefront": "npm run build -w ./apps/storefront"
+    "build:storefront": "npm run build -w ./apps/storefront",
+    "clean:backend": "npm run clean -w ./apps/backend"
   },
   "packageManager": "npm@10.8.2",
   "engines": {

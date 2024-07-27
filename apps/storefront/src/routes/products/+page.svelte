@@ -2,12 +2,16 @@
 	import { Button } from 'svelte-ux';
 	import { Tilt } from 'svelte-ux';
 
-	let cartData: boolean = false;
 	const productCount: number = 3;
 
-	import product1 from '$lib/assets/images/products/product1.png';
-	import product2 from '$lib/assets/images/products/product2.png';
-	import product3 from '$lib/assets/images/products/product3.png';
+	import { onMount } from 'svelte';
+
+	export let data;
+	const products = data.products;
+
+	onMount(() => {
+		console.log(data, products);
+	});
 </script>
 
 <svelte:head>
@@ -22,7 +26,7 @@
 				<Tilt class="hover:scale-110 transition duration-500 basis-1/3">
 					<img
 						class="item-image transition ease-out"
-						src={product1}
+						src="https://images.ezzy.dog/ezzymerch/products/product1.png"
 						alt="ezzymerch x getfent Signature T-Shirt"
 					/>
 				</Tilt>
@@ -36,7 +40,7 @@
 				<Tilt class="hover:scale-105 transition duration-500 basis-1/3">
 					<img
 						class="item-image transition ease-out"
-						src={product2}
+						src="https://images.ezzy.dog/ezzymerch/products/product2.png"
 						alt="ezzymerch x getfent Alt T-Shirt"
 					/>
 				</Tilt>
@@ -50,7 +54,7 @@
 				<Tilt class="hover:scale-110 transition duration-500 basis-1/3">
 					<img
 						class="item-image transition ease-out"
-						src={product3}
+						src="https://images.ezzy.dog/ezzymerch/products/product3.png"
 						alt="ezzymerch x jaimewallowa Signature Hat"
 					/>
 				</Tilt>

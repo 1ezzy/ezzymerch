@@ -2,19 +2,12 @@
 	import { onMount } from 'svelte';
 	import { Button, Tilt } from 'svelte-ux';
 
-	import product1 from '$lib/assets/images/products/product1.png';
-	import product2 from '$lib/assets/images/products/product2.png';
-	import product3 from '$lib/assets/images/products/product3.png';
+	export let data;
+	const products = data.products;
 
-	import jaime from '$lib/assets/images/artists/jaime.jpg';
-	import fent from '$lib/assets/images/artists/fent.jpg';
-
-	// 	export let data
-	//    const products = data.products
-
-	//    onMount(() => {
-	// 	console.log(products)
-	//    })
+	onMount(() => {
+		console.log(products);
+	});
 </script>
 
 <svelte:head>
@@ -39,7 +32,7 @@
 				<div class="bg-surface-500 flex flex-col items-center justify-center gap-8">
 					<img
 						class="w-[256px] rounded-lg"
-						src={fent}
+						src="https://images.ezzy.dog/ezzymerch/artists/fent.jpg"
 						alt="ezzymerch x getfent Signature T-Shirt"
 					/>
 					<h3 class="text-3xl">getfent</h3>
@@ -47,7 +40,7 @@
 				<div class="bg-surface-500 flex flex-col items-center justify-center gap-8">
 					<img
 						class="w-[256px] rounded-lg"
-						src={jaime}
+						src="https://images.ezzy.dog/ezzymerch/artists/jaime.jpg"
 						alt="ezzymerch x getfent Signature T-Shirt"
 					/>
 					<h3 class="text-3xl">jaimewallowa</h3>
@@ -63,7 +56,7 @@
 					<Tilt class="hover:scale-110 transition duration-500 flex justify-center">
 						<img
 							class="product-image transition ease-out"
-							src={product1}
+							src="https://images.ezzy.dog/ezzymerch/products/product1.png"
 							alt="ezzymerch x getfent Signature T-Shirt"
 						/>
 					</Tilt>
@@ -92,7 +85,7 @@
 					<Tilt class="hover:scale-110 transition duration-500 flex justify-center">
 						<img
 							class="product-image transition ease-out"
-							src={product2}
+							src="https://images.ezzy.dog/ezzymerch/products/product2.png"
 							alt="ezzymerch x getfent Alt T-Shirt"
 						/>
 					</Tilt>
@@ -103,7 +96,7 @@
 					<Tilt class="hover:scale-110 transition duration-500 flex justify-center">
 						<img
 							class="product-image transition ease-out"
-							src={product3}
+							src="https://images.ezzy.dog/ezzymerch/products/product3.png"
 							alt="ezzymerch x jaimewallowa Signature Hat"
 						/>
 					</Tilt>
